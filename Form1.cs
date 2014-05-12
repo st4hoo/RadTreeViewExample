@@ -17,15 +17,18 @@ namespace RadTreeViewExample
             InitializeComponent();
 
             radTreeView1.SelectedNodeChanged += radTreeView1_SelectedNodeChanged;
+
             radTreeView1.MultiSelect = true;
+
             RadTreeNode node1 = new RadTreeNode("a");
-            node1.Nodes.Add(new RadTreeNode{ Text = "a1" });
-            node1.Nodes.Add(new RadTreeNode{ Text = "a2" });
+            node1.Nodes.Add(new RadTreeNode("a1"));
+            node1.Nodes.Add(new RadTreeNode("a2"));
             RadTreeNode node2 = new RadTreeNode("b");
-            node2.Nodes.Add(new RadTreeNode { Text = "b1" });
-            node2.Nodes.Add(new RadTreeNode { Text = "b2" });
+            node2.Nodes.Add(new RadTreeNode("b1"));
+            node2.Nodes.Add(new RadTreeNode("b2"));
             RadTreeNode node3 = new RadTreeNode("c");
             RadTreeNode node4 = new RadTreeNode("d");
+
             radTreeView1.Nodes.Add(node1);
             radTreeView1.Nodes.Add(node2);
             radTreeView1.Nodes.Add(node3);
